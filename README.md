@@ -1,2 +1,2 @@
-# My_work
-Sample codes which are made in a non-professional way. 
+# Project_Web
+This repository contains the web development from basic to pro!
