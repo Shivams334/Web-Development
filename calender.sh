@@ -4,7 +4,7 @@ for i in {1..12}
 do
 	touch temp$i.txt
 	git add -A
-	a="Sun Mar "
+	a="Mon Mar "
 	b=$i
 	c=" 14:00 2016 +0630"
 	export GIT_AUTHOR_DATE=$a$b$c
