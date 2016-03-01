@@ -6,7 +6,7 @@ do
 	git add -A
 	a="Sun Mar "
 	b=$i
-	c=" 14:00 2017 +0530"
+	c=" 14:00 2016 +0630"
 	export GIT_AUTHOR_DATE=$a$b$c
 	export GIT_COMMITTER_DATE=$a$b$c
 	git commit -am "`echo ${list[$RANDOM % ${#list[@]} ]}`"
@@ -19,5 +19,5 @@ do
 	export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 	git commit -m "Addes some patches"
 	git commit -am "`echo ${list[$RANDOM % ${#list[@]} ]}`"
-	git push origin master
 done
+git push origin master
