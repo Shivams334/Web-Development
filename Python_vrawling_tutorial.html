@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animal made</title>
+<meta name="viewport" >
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="/path/to/parallax.js"></script>
+<style type="text/css">
+	 body, html{
+	/* important */
+	height: 100%;
+}
+ 
+.cd-fixed-bg {
+	min-height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+ 
+.cd-fixed-bg.cd-bg-1 {
+  background-image: url("https://download.unsplash.com/photo-1429051883746-afd9d56fbdaf");
+}
+ 
+.cd-scrolling-bg {
+	min-height: 100%;
+}
+</style>
+</head>
+<body>
+<div class="cd-fixed-bg cd-bg-1">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-4" style="background-color: #FF2A2A">Facebook</div>
+<div class="col-md-4" style="background-color: #FFCC00">Twitter</div>
+<div class="col-md-4" style="background-color: #00D4AA">Googleplus</div>
+</div>
+<h2 style="color:white">Now firstly, for making games in python you should write <code>import scrapy</code></h2>
+<h3 style="color:white">The code for stackoverflow crawler is given below:</h3>
+</div>
+<pre>
+import scrapy
+class DmozSpider(scrapy.Spider):
+    name = "dmoz"
+    allowed_domains = ["dmoz.org"]
+    start_urls = [
+        "http://www.dmoz.org/Computers/Programming/Languages/Python/Books/",
+        "http://www.dmoz.org/Computers/Programming/Languages/Python/Resources/"
+    ]
+
+    def parse(self, response):
+        for sel in response.xpath('//ul/li'):
+            title = sel.xpath('a/text()').extract()
+            link = sel.xpath('a/@href').extract()
+            desc = sel.xpath('text()').extract()
+            yield item
+</pre>
+<h4 style="color:white">To copy the above code, select it and press <kbd>ctrl+c</kbd></h4>
+<h4 style="color:white">If you got that, then its <p class="text-success">Success</p></h4>
+<h4 style="color:white">And if not, then is <p class="text-danger">Danger</p></h4>
+<h2 style="color:white">Check out some really helpfull crawler tutorials on youtube</h2>
+<table class="table table-condensed">
+<thead>
+<tr>
+    <th style="color:white">Name</th>
+    <th style="color:white">Youtube link</th>
+</tr>    
+</thead>
+<tbody>
+<tr>
+    <td style="color:white">Bucky python-crawler tutorial 1</td>
+    <td><a href="http://bit.ly/1XujKaJ" style="color:white">Video 1</a></td>
+</tr>
+<tr>
+    <td style="color:white">Bucky python-crawler tutorial 2</td>
+    <td><a href="http://bit.ly/1Pbgg7f" style="color:white">Video 2</a></td>
+</tr>
+<tr>
+    <td style="color:white">Bucky python-crawler tutorial 3</td>
+    <td ><a href="http://bit.ly/1MlUEVR" style="color:white">Video 3</a></td>
+</tr>    
+</tbody>
+</div>
+
+</body>
+</html>
