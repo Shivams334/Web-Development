@@ -4,7 +4,7 @@
 	background-color: #004455;
 	position: absolute;
 	animation: left-to-right 2s;
-	-webkit-animation: left-to-right 2s;
+	/*-webkit-animation: left-to-right 2s;
 	-moz-animation: left-to-right 2s;
 	-webkit-animation-name: left-to-right;
 	-webkit-animation-duration: 2s;
@@ -15,7 +15,7 @@
 	-webkit-animation-play-state: paused;
 	animation: left-to-right 2s ease 0s infinite alternate;
 	-webkit-animation: left-to-right 2s ease 0s infinite alternate;
-	-moz-animation: left-to-right 2s ease 0s infinite alternate;
+	-moz-animation: left-to-right 2s ease 0s infinite alternate;*/
 }
 
 @keyframes left-to-right {
