@@ -4,5 +4,5 @@ function initAll() {
 }
 function onclickhandle() {
 	alert("See you on github");
-	return true;
+	return false;
 }
